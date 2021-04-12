@@ -19,7 +19,14 @@ def main():
         command1 = pexpect.spawn('cryfs /home/%USER/.local/share/plasma-vault/test_today.enc/ /home/%USER/Vaults/test_today')
         command1.expect('Password:')
         command1.sendline(password)
-        command1.interact()
+        result = command1.expect(['Error 11: Could not load config file. Did you enter the correct password?', 'Mounting filesystem. To unmount, call:'])
+        if result == 0:
+            print ("Still bruteforcing using " + password)
+        elif result == 1:
+            print ("Bruteforce Complete, The password was " + password)
+            break
+
+
 
 
 
