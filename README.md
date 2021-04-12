@@ -1,5 +1,6 @@
 # BrokenVaults
 Understanding how bruteforcing works by creating a script that will bruteforce KDE-Vaults.
+As of now the script will only work with cryfs encryption program. Later updates will inlcude Encfs and gocryptfs
 
 ## Requirements
 ```
