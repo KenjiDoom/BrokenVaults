@@ -24,12 +24,11 @@ def main():
         command1.sendline(password)
         result = command1.expect(['Error 11: Could not load config file. Did you enter the correct password?', 'Mounting filesystem. To unmount, call:'])
         if result == 0:
-            print ("Still bruteforcing using " + password)
+            #print ("Still bruteforcing using " + password)
+            print('Attacking [{0}] with: {1} '.format(basedir, password))
         elif result == 1:
-            print ("Bruteforce Complete, The password was " + password)
+            print('Done [{0}] [{1}] Password:{2}'.format(basedir, mountdir, password))
             break
-
-
 
 
 
