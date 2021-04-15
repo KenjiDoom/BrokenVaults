@@ -1,7 +1,7 @@
 # BrokenVaults
 Understanding how bruteforcing works by creating a script that will bruteforce KDE-Vaults.
 As of now the script will only work with cryfs encryption program. Later updates will inlcude Encfs and gocryptfs
-
+SIDE NOTE: If you check the plasmavaultrc file, you can get the location of the basedir and mountdir for each vault. It also provides details on what method is being used for encryption.
 ### Requirements
 ```
 pip install pexpect 
