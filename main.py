@@ -1,6 +1,18 @@
 #!/usr/env/python3
 # Author: KenjiDoom
 import pexpect
+import argparse
+
+
+def keywords():
+    parser = argparse.ArgumentParser(description='Bruteforce KDE-Vaults')
+    parser.add_argument('wordlist', metavar='--w', type=str, help='Wordlist file, password file location, must be a txt file. ')
+    parser.add_argument('basedir', metavar='--b', type=str, help='The base directory, ENC file location. ') 
+    parser.add_argument('mountdir', metavar='--m', type=str, help='Mount directory for the ENC file. ')
+    #args = parser.parse_args()
+    print(args.wordlist + args.basedir + args.mountdir) #check to see if its working 
+
+
 
 
 def main():
