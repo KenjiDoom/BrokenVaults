@@ -32,7 +32,7 @@ Attacking [/home/$USER/.local/share/plasma-vault/test.enc] with: password
 Done [/home/$USER/.local/share/plasma-vault/test.enc] [/home/$USER/Vaults/test] Password:123
 
 ```
-
+![](https://github.com/KenjiDoom/BrokenVaults/blob/main/terminal_video.gif)
 
 ### Release History
 * 0.0.1
